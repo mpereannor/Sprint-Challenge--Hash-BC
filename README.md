@@ -24,11 +24,36 @@ This sprint challenge is divided up into three parts:  Hash tables coding, block
 
 Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
+runtime complexity
+ `access` - `O(1)`
+ `add_front` - `O(1)`
+ `remove_front` - `O(1)`
+ `add_back` - `O(1)`
+ `remove_back` - `O(1)`
+
 * What is the worse case scenario if you try to extend the storage size of a dynamic array?
+`O(n)`
 
 Explain how a blockchain is structured. What are the blocks, what is the chain? How is the data organized?
+
+
+  a blockchain is composed of;
+  a `block` which comprises a list of transactions, the length of the block determined by the number of transactions, the index of the current transaction, proof,  and a timestamp.
+  a `chain` a hash that varies in complexity that links one `block` to another. A current hash is derived from the data of a previous block.
+  In order to allow for security and transparency, networks that run a blockchain are made up of algorithms that are time consuming and expensive to operate. This problem is curbed with decentralized operators who are incentivized
+
+
+
  
 Explain how proof of work functions. How does it operate. How does this protect the chain from attack. What kind of attack is possible?
+
+  chaining block together makes it impossible to modify transactions included in any block without modifying all subsequent blocks. As a result, the cost ot modify a particular block increases with every new block added to the blockchain, magnifying the effect of the proof of work.
+
+  proof of work forces a potential attacker to execute almost impossible computational tasks. This is not only time consuming, but demans an incredible amount of computational power.
+
+  however, a 51% attack, where a certain miner or mining pool, that owns more than 50% of all the network's hashing power, acts maliciously to disturb the network's operation, can disrupt a blockchain newtwork. 
+
+
 
 ## Project Set Up
 
