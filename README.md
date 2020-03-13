@@ -26,8 +26,8 @@ Explain in detail the workings of a dynamic array:
 * What is the runtime complexity to access an array, add or remove from the front, and add or remove from the back?
 runtime complexity
  `access` - `O(1)`
- `add_front` - `O(1)`
- `remove_front` - `O(1)`
+ `add_front` - `O(n)`
+ `remove_front` - `O(n)`
  `add_back` - `O(1)`
  `remove_back` - `O(1)`
 
